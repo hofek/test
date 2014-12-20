@@ -1,0 +1,74 @@
+.outerContainer{
+	background-color: #575757;
+	margin: 0 auto;
+	height: 900px;
+	padding-top: 50px;
+}
+
+.outerContainer .innerContainer{
+	background-color: black;
+	margin: 0 auto;
+	width: 1212px;
+	height: 700px;
+	position: relative;
+	outline: 20px solid black;
+}
+
+.outerContainer .photosCContainer{
+	margin: 0;
+	margin-left: 408px;
+	height: 700px;
+	width: 400px;
+	position: absolute;
+}
+
+.outerContainer .photosLContainer, .outerContainer .photosRContainer{
+	opacity: 0.3;
+	margin: 0 auto;
+	position: absolute;
+	cursor: pointer;
+	width: 300px;
+	height: 525px;
+	margin-top: 87px;
+	background-color: red;
+	-webkit-box-shadow: inset 0px 0px 40px 12px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 40px 12px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 40px 12px rgba(0,0,0,0.75););
+}
+
+.outerContainer .photosRContainer{
+	margin-left: 862px;
+}
+
+.outerContainer .photosLContainer{
+	margin-left: 54px;
+}
+
+.outerContainer ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+
+.outerContainer  li{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	
+}
+
+.outerContainer .photosCContainer img{
+	width: 400px;
+	height: 700px;
+	padding: 0px;
+	margin: 0px;
+	transition: opacity 1000ms;
+}
+
+.photosLContainer img, .photosRContainer img{
+	width: 300px;
+	height: 525px;
+	z-index: -1;
+	transition: opacity 1000ms;
+}
